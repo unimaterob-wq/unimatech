@@ -147,9 +147,7 @@ nav a:hover {
 /* PRODUTO */
 .produto {
     background-color: #fa991a;
-    padding: 80px 60px;
-   
-
+    padding: 60px 60px; 
 }
 
 
@@ -328,6 +326,7 @@ footer {
     width: 50px;
 
 }
+
 
 
 
