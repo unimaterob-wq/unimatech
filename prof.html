@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIMATECH</title>
+    <link rel="stylesheet" href="prof.css">
+</head>
+<body>
+<header>
+    <div class="logo"> UNIMATECH </div>
+</header>
+<section class="avaliacao-imagem">
+
+    <H1 class="titulo-avaliacao">Avalie nossos produtos!</H1>
+
+  <div class="avaliacao-produtos">  
+
+    <div class="avaliacao" id="avaliacao">
+        <span class="estrela" data-value="1">&#9733;</span>
+        <span class="estrela" data-value="2">&#9733;</span>
+        <span class="estrela" data-value="3">&#9733;</span>
+        <span class="estrela" data-value="4">&#9733;</span>
+        <span class="estrela" data-value="5">&#9733;</span>
+    </div>
+
+    <p id="resultado"></p>
+    <!-- Área de comentário -->
+    <textarea class="comentario" placeholder="Escreva seu comentário..."></textarea>
+    <button class="enviar">Enviar</button>
+    <p class="comentario-exibido"></p>
+  </div>
+  <p id="media-avaliacoes"></p>
+
+  <div class="lista-exibida" id="lista-avaliacoes"></div>
+  
+
+
+</section>
+<script>
+
+const estrelas = document.querySelectorAll('.estrela');
+const textarea = document.querySelector('.comentario');
+const botao = document.querySelector('.enviar');
+const lista = document.getElementById('lista-avaliacoes');
+const mediaTexto = document.getElementById('media-avaliacoes');
+
+let notaSelecionada = 0;
+
+// =====================
+// ESTRELAS
+// =====================
+estrelas.forEach(estrela => {
+    estrela.addEventListener('mouseover', () => {
+        pintarEstrelas(estrela.dataset.value);
+    });
+
+    estrela.addEventListener('mouseout', () => {
+        pintarEstrelas(notaSelecionada);
+    });
+
+    estrela.addEventListener('click', () => {
+        notaSelecionada = estrela.dataset.value;
+    });
+});
+
+function pintarEstrelas(nota) {
+    estrelas.forEach(estrela => {
+        estrela.classList.toggle(
+            'hover',
+            estrela.dataset.value <= nota
+        );
+    });
+}
+
+// =====================
+// SALVAR AVALIAÇÃO
+// =====================
+botao.addEventListener('click', () => {
+    const comentario = textarea.value.trim();
+
+    if (!notaSelecionada || !comentario) {
+        alert('Preencha a nota e o comentário!');
+        return;
+    }
+
+    const avaliacao = {
+        estrelas: Number(notaSelecionada),
+        comentario: comentario
+    };
+
+    const avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
+    avaliacoes.push(avaliacao);
+    localStorage.setItem('avaliacoes', JSON.stringify(avaliacoes));
+
+    textarea.value = '';
+    notaSelecionada = 0;
+    pintarEstrelas(0);
+
+    carregarAvaliacoes();
+});
+
+// =====================
+// CALCULAR MÉDIA
+// =====================
+function calcularMedia(avaliacoes) {
+    if (avaliacoes.length === 0) return 0;
+
+    const soma = avaliacoes.reduce((total, av) => {
+        return total + Number(av.estrelas);
+    }, 0);
+
+    return (soma / avaliacoes.length).toFixed(1);
+}
+
+
+// =====================
+// CARREGAR AVALIAÇÕES
+// =====================
+function carregarAvaliacoes() {
+    lista.innerHTML = '';
+
+    const avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
+
+    avaliacoes.forEach(av => {
+        const div = document.createElement('div');
+        div.innerHTML = `
+            ⭐ ${av.estrelas} <br>
+            ${av.comentario}
+            <hr>
+        `;
+        lista.appendChild(div);
+    });
+
+    const media = calcularMedia(avaliacoes);
+    mediaTexto.textContent = `Média das avaliações: ${media} ⭐`;
+}
+
+// Carrega ao abrir a página
+carregarAvaliacoes();
+
+</script>
+
+
+</body>    

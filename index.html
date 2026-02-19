@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIMATECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"> <img src="img/UNIMATE-2.JPG" alt="unimate" class="logo-img"> UNIMATECH</div>
+    <nav>
+        <a href="#UNIMATECH">Casa</a>
+        <a href="#o-que-e">Sobre nós</a>
+        <a href="#rocking-safe">Serviço</a>
+        <a href="#fale-conosco">Contato</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+    
+  <div class="hero-content">
+     <h1>UNIMATECH</h1>
+     <h2>Empresa da Unimate Rob<h2>
+   <p> A galeria que reúne todos os nossos projetos</p>
+   <a href="#o-que-e" class="btn">SAIBA MAIS</a>
+  </div>
+</section>
+
+
+<section id="o-que-e" class="sobre">
+    
+     <h2>Sobre nós</h2>
+   <!-- <img src="img/sobre nós.jpg" alt="Sobre unimate" class="sobre-img">-->
+    <h3>O que é?</h3>
+    <p>
+        A UNIMATECH reúne uma equipe dinâmica com uma paixão compartilhada por 
+        robótica e tecnologia.Dedicados a impulsionar a
+        inovação, projetamos, criamos e comercializamos produtos de ponta.
+        Nossa missão é fomentar o entusiasmo tecnológico e alcançar marcos notáveis 
+        ​​em todos os projetos da temporada.
+    </p>
+    <a href="#rocking-safe" class="btn">PRÓXIMO</a>
+    
+</section>
+
+<section id="rocking-safe" class="produto">
+    <h2>Produto em Destaque</h2>
+
+    <div class="produto-card">
+
+      <div class="produto-texto">
+
+        <!-- IMAGEM DO PRODUTO -->
+
+        <h3>ROCKING SAFE</h3>
+        <span class="preco">R$632,00 </span>
+    
+        <p>
+            O sistema é composto por uma estrutura de transporte reforçada,
+            projetada para proteger artefatos históricos contra impactos
+            mecânicos e variações ambientais.
+        
+            O acondicionamento utiliza materiais de alta densidade para absorção
+            de choques, aliados a sensores de temperatura e umidade.
+        </p>
+      </div>
+
+        <div class="produto-imagem">  
+          <img src="img/rocking-safe.jpg" alt="Produto Rocking Safe"> 
+        </div>
+    </div>
+        <a href="#sublume" class="btn">PRÓXIMO</a>
+</section>
+<section id="sublume" class="sublume">
+  
+  <h2>Produto em Destaque</h2>
+
+ <div class="sublume-card">
+
+   <div class="sublume-imagem">
+        <img src="img/sublume2.jpg" alt="Produto Sublume" class="sublume-img">
+       </div>
+
+  <div class="sublume-texto">
+
+      <h3>SUBLUME</h3>
+      <span class="preco 2">R$100,00</span>
+        <p>
+           Diante do desafio de catalogar e estudar a vida marinha,
+           criamos um sistema de iluminação subaquatica,que atrai espécies marinhas
+           para áreas específicas, facilitanto a coleta de dados. 
+           Elas utilizam correntes de aço inoxidáveis para sustentação do sistema, 
+           que é preso na parte de cima por uma boia de balizamento, e sustentado na parte 
+           de baixo por um peso. O sistema é envolto em uma caixa de 
+           acrilico para proteger as luzes
+        </p>
+    </div>   
+ </div>
+
+    <div class="botoes">
+         <a href="#fale-conosco" class="btn">Entre em contato</a>
+         <a href="#" class="btn destaque" id="avaliar-btn">Avaliar agora</a>
+        <!-- <a href="pagina-secundaria.html" class="botao">Ir para Página Secundária</a>-->
+    </div>
+</section>
+
+<section id="fale-conosco" class="contato">
+
+    <h2>Fale conosco</h2>
+    
+   <div class="texto-contato">
+    <p>Entre em contato para mais informações</p>
+
+    <p>telefone:   (98) 9126-4203</p>
+    <p> email:   unimate.rob@gmail.com</p> 
+    <p> instagram:   @unimate.rob</p> 
+   </div> 
+
+</section>  
+
+<footer>
+    <p>@unimate.rob</p>
+</footer>
+<script>
+  // Pegar o botão pelo id
+  const botaoAvaliar = document.getElementById('avaliar-btn');
+
+  // Adicionar evento de clique
+  botaoAvaliar.addEventListener('click', function(event) {
+      event.preventDefault(); // evita que o link padrão "#" seja seguido
+      // Redireciona para a página secundária
+      window.location.href = 'avaliacoes-dos-profissionais/prof.html'; // coloque o caminho correto
+  });
+</script>
+
+</body>
+</html>
