@@ -17,14 +17,13 @@ html {
 /* HEADER */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
     border-bottom: 1px solid #ffffff;
 }
 
 .logo {
-    text-align: center;
     font-size: 22px;
     font-weight: bold;
 }
@@ -34,6 +33,10 @@ nav a {
     text-decoration: none;
     margin-left: 20px;
     font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffffff;
 }
 
 .avaliacao-imagem{
