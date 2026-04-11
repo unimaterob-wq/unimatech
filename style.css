@@ -28,10 +28,13 @@ header {
 
 .logo {
     display: flex;
-    align-items: center; /* alinha verticalmente */
-    gap: 10px; /* espaço entre imagem e texto */
-    font-size: 22px;
-    font-weight: bold;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    display: block;
 }
 
 nav a {
