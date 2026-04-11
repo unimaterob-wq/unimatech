@@ -246,10 +246,10 @@ nav a:hover {
     background-color: #f9af4f;
 }
 
-.produto .btn{
-    justify-content: center;
-    text-align: center;
-    display: flex 
+.produto .btn {
+    display: inline-block;
+    width: auto;
+    padding: 12px 30px;
 }
 
 .sublume-card{
