@@ -154,6 +154,7 @@ nav a:hover {
 .produto {
     background-color: #fa991a;
     padding: 80px ; 
+    text-align: center; /* centraliza o botão */
 }
 
 
@@ -246,11 +247,13 @@ nav a:hover {
     background-color: #f9af4f;
 }
 
-.produto .btn {
-    display: inline-block;
-    width: auto;
-    padding: 6px 15px;
+.produto .btn { 
+    justify-content: center;
+    text-align: center;
+    display: inline-block
 }
+
+
 
 .sublume-card{
     display: flex;              /* ativa lado a lado */
