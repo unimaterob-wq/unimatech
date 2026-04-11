@@ -131,7 +131,7 @@ nav a:hover {
     width:100%;
 }
 .sobre .btn {
-    text-align: center;
+    
     background-color: #ff9900;   
     color: #000000;              
     border: 2px solid #000000;
@@ -249,7 +249,6 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     display: inline-block;
-    width: 20px;
 }
 
 
