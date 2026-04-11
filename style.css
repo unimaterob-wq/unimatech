@@ -193,7 +193,7 @@ nav a:hover {
 }
 
 .produto-imagem img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
