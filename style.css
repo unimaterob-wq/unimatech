@@ -27,6 +27,9 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 10px; /* espaço entre imagem e texto */
     font-size: 22px;
     font-weight: bold;
 }
