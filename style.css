@@ -135,8 +135,8 @@ nav a:hover {
     background-color: #ff9900;   
     color: #000000;              
     border: 2px solid #000000;
-    width: 20px;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .sobre h2 {
