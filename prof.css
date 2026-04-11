@@ -24,10 +24,15 @@ header {
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.logo-img {
+    width: 50px;
+    display: block;
+}
 nav a {
     color: #fff;
     text-decoration: none;
