@@ -150,10 +150,9 @@ nav a:hover {
 
 /* PRODUTO */
 .produto {
-
-    max-width: 1200px;
+    min-height: 100vh;
     margin: auto;
-    padding: 0 20px;
+    padding: 80px;
     background-color: #fa991a;
     text-align: center; /* centraliza o botão */
 }
