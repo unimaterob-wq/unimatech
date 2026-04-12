@@ -177,7 +177,7 @@ nav a:hover {
     gap: 40px;                  /* espaço entre texto e imagem */
     
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
 
     background-color: #fa991A;
@@ -196,7 +196,9 @@ nav a:hover {
 }
 
 .produto-imagem img {
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 
