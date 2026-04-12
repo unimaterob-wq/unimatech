@@ -191,13 +191,13 @@ nav a:hover {
 
 /* IMAGEM */
 .produto-imagem {
-    flex: 1;
+    flex: 2;
     text-align: right;
 }
 
 .produto-imagem img {
 
-    width: 500px;
+    width: 100%;
     max-width: 500px;
     
 }
