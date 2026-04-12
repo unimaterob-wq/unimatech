@@ -152,7 +152,7 @@ nav a:hover {
 .produto {
     min-height: 100vh;
     margin: auto;
-    padding: 80px;
+    padding: 40px;
     background-color: #fa991a;
     text-align: center; /* centraliza o botão */
 }
