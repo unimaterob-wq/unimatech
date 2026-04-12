@@ -151,9 +151,12 @@ nav a:hover {
 /* PRODUTO */
 .produto {
     min-height: 100vh;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza vertical */
+    align-items: center;     /* centraliza horizontal */
     background-color: #fa991a;
-    text-align: center; /* centraliza o botão */
+    padding: 40px;
 }
 
 
@@ -172,7 +175,7 @@ nav a:hover {
     display: flex;              /* ativa lado a lado */
     align-items: center;        /* alinha verticalmente */
     gap: 40px;                  /* espaço entre texto e imagem */
-
+    
     width: 100%;
     max-width: 1200px;
     margin: auto;
