@@ -193,7 +193,6 @@ nav a:hover {
 .produto-imagem {
     flex: 1;
     text-align: right;
-    width: 1000px
 }
 
 .produto-imagem img {
