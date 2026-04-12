@@ -130,12 +130,17 @@ nav a:hover {
    
     width:100%;
 }
+
+.sobre {
+    text-align: center;
+}
+
 .sobre .btn {
     background-color: #ff9900;   
     color: #000000;              
     border: 2px solid #000000;
     display: inline-block;
-    justify-content: center;
+    padding: 12px 40px;
 }
 
 .sobre h2 {
