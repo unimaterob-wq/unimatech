@@ -119,7 +119,8 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    align-intems: center;
+    align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
@@ -129,10 +130,6 @@ nav a:hover {
     
    
     width:100%;
-}
-
-.sobre {
-    text-align: center;
 }
 
 .sobre .btn {
