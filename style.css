@@ -174,7 +174,7 @@ nav a:hover {
 .produto-card {
     display: flex;              /* ativa lado a lado */
     align-items: center;        /* alinha verticalmente */
-    gap: 80px;                  /* espaço entre texto e imagem */
+    gap: 40px;                  /* espaço entre texto e imagem */
     
     width: 100%;
     max-width: 1200px;
@@ -197,7 +197,7 @@ nav a:hover {
 
 .produto-imagem img {
 
-    width: 100%;
+    width: 500px;
     max-width: 500px;
     
 }
