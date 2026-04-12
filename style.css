@@ -191,7 +191,7 @@ nav a:hover {
 
 /* IMAGEM */
 .produto-imagem {
-    flex: 2;
+    flex: 1;
     text-align: right;
 }
 
