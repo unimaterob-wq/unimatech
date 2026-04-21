@@ -19,7 +19,7 @@ html {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
     border-bottom: 1px solid #ffffff;
@@ -43,25 +43,15 @@ header {
 
 
 nav a {
-
     color: #fff;
-
     text-decoration: none;
-
     margin-left: 20px;
-
     font-size: 14px;
-
 }
 
 
-
-
-
 nav a:hover {
-
     color: #ffffff;
-
 }
 
 
@@ -101,13 +91,9 @@ nav a:hover {
     text-align: center;
 
     padding: 20px;*/
-
     text-align: center;
-
     padding: 100px 20px;
-
     min-height: 80vh;
-
 }
 
 
@@ -135,15 +121,9 @@ nav a:hover {
 .hero .btn {
 
     background-color: #ff9900;   /* laranja */
-
     color: #000000;              
-
     border: 2px solid #000000;
-
     margin-top: 20px;
-
-    
-
 }
 
 
@@ -151,11 +131,8 @@ nav a:hover {
 
 
 .hero h1 {
-
     font-size: 48px;
-
     letter-spacing: 4px;
-
 }
 
 
@@ -163,7 +140,6 @@ nav a:hover {
 .hero p {
 
     margin-top: 10px;
-
     color: #ffffff;
 
 }
