@@ -1,73 +1,43 @@
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
-
-
 body {
-
     background-color: #ff9900;
-
     color: #ffffff;
-
 }
-
-
 
 html {
-
-            scroll-behavior: smooth;
-
-        }
+   scroll-behavior: smooth;
+}
 
 
 
 /* HEADER */
 
 header {
-
     display: flex;
-
-    justify-content: space-between;
-
+    justify-content: center;
     align-items: center;
-
     padding: 20px 60px;
-
     border-bottom: 1px solid #ffffff;
-
     height:80px;
-
 }
-
-
 
 .logo {
 
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
 }
 
 
 
 .logo-img {
-
     width: 50px;
-
     display: block;
-
 }
 
 
