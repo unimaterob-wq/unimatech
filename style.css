@@ -152,7 +152,7 @@ nav a:hover {
 
 /* PRODUTO */
 .produto {
-    height: calc(100vh - 80px); /* 🔥 altura fixa da tela */
+    min-height: 100vh; /* ocupa no mínimo a tela inteira */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
