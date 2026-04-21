@@ -245,38 +245,23 @@ nav a:hover {
 
 .produto {
 
-    min-height: 100vh; /* ocupa no mínimo a tela inteira */
-
-    height: auto;
-
+    height: 100vh; /* Força a altura a ser exatamente o tamanho da tela */
     display: flex;
-
     flex-direction: column;
-
-    justify-content: space-between;
-
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
     align-items: center;
-
     background-color: #fa991a;
-
-    overflow: visible;
-
-    padding: 20px 0;
-
+    overflow: hidden; /* Evita que itens saltados criem scroll */
+    padding: 20px;
 }
 
 
 
 .produto h2 {
-
     color: #000000;
-
     text-align: center;
-
     margin-bottom: 10px;
-
     font-size: 30px;
-
 }
 
 
@@ -291,25 +276,14 @@ nav a:hover {
 
 .produto-card {
 
-    flex: 1; /* 🔥 agora funciona */
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding: 10px;
 
     display: flex;
-
     align-items: center;
-
-    gap: 20px;
-
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px; /* Reduzi um pouco a largura máxima */
     width: 100%;
-
-    background-color: #fa991A;
-
-    border-radius: 8px;
+    margin: 0 auto;
 
 }
 
@@ -318,17 +292,13 @@ nav a:hover {
 /* TEXTO */
 
 .produto-texto {
-
+    
+    
     flex: 1;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
-    padding: 10px 20px;
-
+    padding: 0px 20px;
 }
 
 
@@ -336,28 +306,22 @@ nav a:hover {
 /* IMAGEM */
 
 .produto-imagem {
-
     flex: 1;
-
     justify-content: center;
-
     display: flex;
-
     text-align: right;
-
 }
 
 
 
-.produto-imagem img {       
+.produto-imagem img {  
 
-    width: 100%;
-
-    max-height: 90vh;
-
-    object-fit: contain; /* 🔥 ESSENCIAL */
-
-    transform: scale(1.1); /* Opcional: aumenta o zoom em 10% sem empurrar outros elementos */
+    width: auto; /* Deixa a largura automática */
+    max-width: 100%; 
+    max-height: 60vh; /* Reduzi de 90vh para 60vh para caber com folga */
+    object-fit: contain; 
+    /* Removi o transform: scale(1.1) porque ele estava fazendo a imagem vazar */
+    border-radius: 8px;
 
 }
 
