@@ -152,6 +152,7 @@ nav a:hover {
 /* PRODUTO */
 .produto {
     min-height: 100vh; /* ocupa no mínimo a tela inteira */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +205,7 @@ nav a:hover {
 
 .produto-imagem img {       
     width: 100%;
-    max-height: 80vh;
+    max-height: 90vh;
     object-fit: contain; /* 🔥 ESSENCIAL */
     transform: scale(1.1); /* Opcional: aumenta o zoom em 10% sem empurrar outros elementos */
 }
