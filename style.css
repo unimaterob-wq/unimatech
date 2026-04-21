@@ -161,14 +161,14 @@ nav a:hover {
 
 .produto {
     min-height: calc(100vh - 80px);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 
 .produto h2 {
     color: #000000;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 30px;
 }
 
@@ -179,12 +179,11 @@ nav a:hover {
 .produto-card {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     
     display: flex;              /* ativa lado a lado */
     align-items: center;        /* alinha verticalmente */
-    gap: 40px;                  /* espaço entre texto e imagem */
-    
+    gap: 20px;                  /* espaço entre texto e imagem */
     width: 100%;
 
     background-color: #fa991A;
@@ -210,7 +209,7 @@ nav a:hover {
 .produto-imagem img {
     width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 40vh;
     object-fit: contain; /* 🔥 ESSENCIAL */
 }
 
