@@ -155,7 +155,7 @@ nav a:hover {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #fa991a;
     overflow: visible;
