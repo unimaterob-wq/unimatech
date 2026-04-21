@@ -152,9 +152,10 @@ nav a:hover {
 
 /* PRODUTO */
 .produto {
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #fa991a;
 }
@@ -263,6 +264,7 @@ nav a:hover {
 }
 
 .produto .btn { 
+    margin-bottom: 10px;
     justify-content: center;
     text-align: center;
     display: inline-block;
