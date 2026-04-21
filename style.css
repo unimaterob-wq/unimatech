@@ -9,6 +9,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: #ff9900;
     color: #ffffff;
 }
@@ -150,22 +151,16 @@ nav a:hover {
 
 /* PRODUTO */
 .produto {
-
-    height: 100vh; /* em vez de min-height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fa991a;
-    padding: 0; /* remove o padding que quebra o layout */
-    
-   /* min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  centraliza vertical 
-    align-items: center;      centraliza horizontal 
-    background-color: #fa991a;
-    padding: 40px;*/
+}
+
+.produto {
+    min-height: 100vh;
+    padding: 40px 0;
 }
 
 
@@ -181,7 +176,10 @@ nav a:hover {
 }
 
 .produto-card {
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
     height: 100%; /* ocupa toda altura da seção */
     
     display: flex;              /* ativa lado a lado */
@@ -189,8 +187,6 @@ nav a:hover {
     gap: 40px;                  /* espaço entre texto e imagem */
     
     width: 100%;
-    max-width: none;
-    margin: auto;
 
     background-color: #fa991A;
     border-radius: 8px;
@@ -215,6 +211,7 @@ nav a:hover {
 .produto-imagem img {
     width: 100%;
     height: 100%;
+    max-height: 500px;
     object-fit: cover; /* 🔥 ESSENCIAL */
 }
 
