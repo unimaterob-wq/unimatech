@@ -204,8 +204,9 @@ nav a:hover {
 
 .produto-imagem img {       
     width: 100%;
-    max-height: 60vh;
+    max-height: 80vh;
     object-fit: contain; /* 🔥 ESSENCIAL */
+    transform: scale(1.1); /* Opcional: aumenta o zoom em 10% sem empurrar outros elementos */
 }
 
 
