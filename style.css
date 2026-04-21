@@ -1,358 +1,698 @@
-
-
-
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
     font-family: Arial, Helvetica, sans-serif;
+
 }
+
+
 
 body {
+
     background-color: #ff9900;
+
     color: #ffffff;
+
 }
+
+
 
 html {
+
             scroll-behavior: smooth;
+
         }
 
+
+
 /* HEADER */
+
 header {
+
     display: flex;
-    justify-content: center;
+
+    justify-content: space-between;
+
     align-items: center;
+
     padding: 20px 60px;
+
     border-bottom: 1px solid #ffffff;
+
     height:80px;
+
 }
+
+
 
 .logo {
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
 }
+
+
 
 .logo-img {
+
     width: 50px;
+
     display: block;
+
 }
 
+
+
 nav a {
+
     color: #fff;
+
     text-decoration: none;
+
     margin-left: 20px;
+
     font-size: 14px;
+
 }
+
+
+
 
 
 nav a:hover {
+
     color: #ffffff;
+
 }
+
+
 
 /* HERO */
+
 .hero {
+
    /* height: 300px;
+
     background-image:
+
      linear-gradient(
+
             rgba(0,0,0,0.5),
+
             rgba(0,0,0,0.5)
+
         ),
+
       url("img/hero2.jpg");       
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-attachment: fixed;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     text-align: center;
+
     padding: 20px;*/
+
     text-align: center;
+
     padding: 100px 20px;
+
     min-height: 80vh;
+
 }
+
+
 
 .botoes.hero{
+
     border: #000000;
+
 }
 
+
+
 .hero-content {
+
     position: relative;
+
     z-index: 1;
+
 }
+
+
+
 
 
 .hero .btn {
+
     background-color: #ff9900;   /* laranja */
+
     color: #000000;              
+
     border: 2px solid #000000;
+
     margin-top: 20px;
+
     
+
 }
+
+
+
 
 
 .hero h1 {
+
     font-size: 48px;
+
     letter-spacing: 4px;
+
 }
+
+
 
 .hero p {
+
     margin-top: 10px;
+
     color: #ffffff;
+
 }
+
+
 
 /* SOBRE */
+
 .sobre {
+
     min-height: 100vh;
 
+
+
     background-image:
+
      linear-gradient(
+
             rgba(0,0,0,0.5),
+
             rgba(0,0,0,0.5)
+
         ),
+
       url("sobrenos.jpg");       
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-attachment: fixed;
+
     align-items: center;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     padding: 20px;
+
     text-align: center;
+
     padding: 100px 20px;
+
     padding: 80px 60px;
+
     
+
    
+
     width:100%;
+
 }
+
+
 
 .sobre .btn {
+
     background-color: #ff9900;   
+
     color: #000000;              
+
     border: 2px solid #000000;
+
     display: inline-block;
+
     padding: 12px 40px;
+
     
+
     width: fit-content; /* 🔥 ESSENCIAL */
+
 }
+
+
 
 .sobre h2 {
+
     margin-bottom: 20px;
+
     font-size: 28px;
+
 }
+
+
 
 .sobre p {
+
     line-height: 1.6;
+
     color: #ffffff;
+
 }
+
+
 
 /* PRODUTO */
+
 .produto {
+
     min-height: 100vh; /* ocupa no mínimo a tela inteira */
+
     height: auto;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
+
     align-items: center;
+
     background-color: #fa991a;
+
     overflow: visible;
+
     padding: 20px 0;
+
 }
+
+
 
 .produto h2 {
+
     color: #000000;
+
     text-align: center;
+
     margin-bottom: 10px;
+
     font-size: 30px;
+
 }
+
+
 
 .produto p{
+
     color: #000000;
+
 }
+
+
 
 .produto-card {
+
     flex: 1; /* 🔥 agora funciona */
+
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 10px;
+
     display: flex;
+
     align-items: center;
+
     gap: 20px;
+
     width: 100%;
+
     background-color: #fa991A;
+
     border-radius: 8px;
+
 }
+
+
 
 /* TEXTO */
+
 .produto-texto {
+
     flex: 1;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     padding: 10px 20px;
+
 }
+
+
 
 /* IMAGEM */
+
 .produto-imagem {
+
     flex: 1;
+
     justify-content: center;
+
     display: flex;
+
     text-align: right;
+
 }
 
+
+
 .produto-imagem img {       
+
     width: 100%;
-    max-height: 80vh;
+
+    max-height: 90vh;
+
     object-fit: contain; /* 🔥 ESSENCIAL */
+
     transform: scale(1.1); /* Opcional: aumenta o zoom em 10% sem empurrar outros elementos */
+
 }
+
+
+
+
 
 
 
 .produto-card h3 {
+
     color: #000000;
+
     font-size: 24px;
+
     margin-bottom: 10px;
+
 }
 
+
+
 .preco {
+
     display: block;
+
     margin-bottom: 20px;
+
     color: #000000;
+
     font-weight: bold;
+
 }
+
+
 
 .produto-card p {
 
+
+
     margin-bottom: 15px;
+
     color: #000000;
+
     line-height: 1.4; /* 🔥 mais compacto */
+
     font-size: 14px; /* 🔥 mais compacto */
+
 }
+
+
 
 .botoes {
+
     margin-top: 30px;
+
     text-align: center;
+
 }
+
+
 
 .texto-contato{
+
      line-height: 2.6;
+
      color: #000000;
+
      text-align: center;
+
 }
+
+
 
 .contato{
+
     background-color:#fa991A;
+
     padding: 70px 0;
+
 }
+
     
 
+
+
 .contato h2 {
+
     text-align: center;
+
     color: #000000;      /* texto preto */
+
     margin-bottom: 30px;
+
 }
+
+
+
 
 
 .sublume{
+
     background-color: #f9af4f;
+
 }
 
+
+
 .produto .btn { 
+
     margin-bottom: 20px; /* 🔥 garante que não corte */
+
     justify-content: center;
+
     text-align: center;
+
     display: inline-block;
+
 }
+
+
+
+
 
 
 
 .sublume-card{
+
     display: flex;              /* ativa lado a lado */
+
     align-items: center;        /* alinha verticalmente */
+
     gap: 40px;                  /* espaço entre texto e imagem */
 
+
+
     width: 100%;
+
     max-width: 1200px;
+
     margin: auto;
 
+
+
     background-color: #f9af4f;
+
     padding: 40px;
+
     border-radius: 8px;
+
 }
+
+
 
 .sublume{
+
      min-height: 100vh;
+
 }
+
+
 
 .sublume h2{
+
     color: #000000;
+
 }
 
+
+
 .sublume h3{
+
       color: #000000;
+
 }
+
 .sublume p{
+
     color: #000000;
+
 }
+
+
+
+
+
 
 
 
 
 .btn {
+
     display: inline-block;
+
     padding: 12px 20px;
+
     border: 1px solid #000000;
+
     color: #000000;
+
     text-decoration: none;
+
     margin-right: 10px;
+
     border-radius: 4px;
+
     font-size: 14px;
+
 }
+
+
 
 .btn.destaque {
+
     background-color: #f9af4f;
+
     color: #090909;
+
 }
+
+
 
 .btn:hover {
+
     opacity: 0.8;
+
 }
+
+
 
 /* FOOTER */
+
 footer {
+
     background-color: #ff8000;
+
     text-align: center;
+
     padding: 30px;
+
     border-top: 1px solid #ff8000;
+
     color: #ffffff;        
+
 }
+
 .produto-img{
+
     width: 200px;
 
+
+
 }
+
+
 
 .sublume h2{
+
     text-align: center;
+
 }
+
 .sobre-img{
+
     width: 600px;
+
 }
+
+
 
 .sublume-img{
+
     width: 700px;
+
 }
+
+
 
 .logo-img{
+
     width: 50px;
 
+
+
 }
-
-
-
-
-
 
