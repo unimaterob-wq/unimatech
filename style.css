@@ -152,20 +152,15 @@ nav a:hover {
 
 /* PRODUTO */
 .produto {
-    
+    height: calc(100vh - 80px); /* 🔥 altura fixa da tela */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #fa991a;
-}
-
-.produto {
-    min-height: calc(100vh - 80px);
     overflow: hidden;
     padding: 20px 0;
 }
-
 
 .produto h2 {
     color: #000000;
@@ -179,41 +174,38 @@ nav a:hover {
 }
 
 .produto-card {
-    flex: 1; /* 🔥 ocupa o espaço disponível */
-    
+    flex: 1; /* 🔥 agora funciona */
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    
-    display: flex;              /* ativa lado a lado */
-    align-items: center;        /* alinha verticalmente */
-    gap: 20px;                  /* espaço entre texto e imagem */
+    display: flex;
+    align-items: center;
+    gap: 20px;
     width: 100%;
-
     background-color: #fa991A;
     border-radius: 8px;
 }
 
 /* TEXTO */
 .produto-texto {
-
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 /* IMAGEM */
 .produto-imagem {
     flex: 1;
+    justify-content: center;
+    display: flex;
     text-align: right;
 }
 
-.produto-imagem img {   
+.produto-imagem img {       
     width: 100%;
-    height: 100%;
-    max-height: 70vh;
+    max-height: 60vh;
     object-fit: contain; /* 🔥 ESSENCIAL */
 }
 
@@ -233,9 +225,11 @@ nav a:hover {
 }
 
 .produto-card p {
+
     margin-bottom: 15px;
     color: #000000;
-    line-height: 1.5;
+    line-height: 1.4; /* 🔥 mais compacto */
+    font-size: 14px; /* 🔥 mais compacto */
 }
 
 .botoes {
@@ -267,7 +261,7 @@ nav a:hover {
 }
 
 .produto .btn { 
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* 🔥 garante que não corte */
     justify-content: center;
     text-align: center;
     display: inline-block;
