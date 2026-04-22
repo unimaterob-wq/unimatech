@@ -271,78 +271,50 @@ nav a:hover {
 
 
 
-
-
 .produto-card h3 {
-
     color: #000000;
-
     font-size: 24px;
-
     margin-bottom: 10px;
-
 }
 
 
 
 .preco {
-
     display: block;
-
     margin-bottom: 20px;
-
     color: #000000;
-
     font-weight: bold;
-
 }
 
 
 
 .produto-card p {
-
-
-
     margin-bottom: 15px;
-
     color: #000000;
-
     line-height: 1.4; /* 🔥 mais compacto */
-
     font-size: 14px; /* 🔥 mais compacto */
-
 }
 
 
 
 .botoes {
-
     margin-top: 30px;
-
     text-align: center;
-
 }
 
 
 
 .texto-contato{
-
      line-height: 2.6;
-
      color: #000000;
-
      text-align: center;
-
 }
 
 
 
 .contato{
-
     background-color:#fa991A;
-
     padding: 70px 0;
-
 }
 
     
@@ -350,13 +322,9 @@ nav a:hover {
 
 
 .contato h2 {
-
     text-align: center;
-
     color: #000000;      /* texto preto */
-
     margin-bottom: 30px;
-
 }
 
 
@@ -364,23 +332,24 @@ nav a:hover {
 
 
 .sublume{
-
+    height: 100vh; /* Força a altura exata da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #f9af4f;
-
+    overflow: hidden; /* Impede que o conteúdo vaze */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 
 
 .produto .btn { 
-
     margin-bottom: 20px; /* 🔥 garante que não corte */
-
     justify-content: center;
-
     text-align: center;
-
     display: inline-block;
-
 }
 
 
@@ -390,59 +359,31 @@ nav a:hover {
 
 
 .sublume-card{
-
-    display: flex;              /* ativa lado a lado */
-
-    align-items: center;        /* alinha verticalmente */
-
-    gap: 40px;                  /* espaço entre texto e imagem */
-
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     width: 100%;
-
-    max-width: 1200px;
-
-    margin: auto;
-
-
-
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #f9af4f;
-
-    padding: 40px;
-
-    border-radius: 8px;
-
-}
-
-
-
-.sublume{
-
-     min-height: 100vh;
-
 }
 
 
 
 .sublume h2{
-
     color: #000000;
-
 }
 
 
 
 .sublume h3{
-
       color: #000000;
-
 }
 
 .sublume p{
-
     color: #000000;
-
 }
 
 
@@ -454,41 +395,27 @@ nav a:hover {
 
 
 .btn {
-
     display: inline-block;
-
     padding: 12px 20px;
-
     border: 1px solid #000000;
-
     color: #000000;
-
     text-decoration: none;
-
     margin-right: 10px;
-
     border-radius: 4px;
-
     font-size: 14px;
-
 }
 
 
 
 .btn.destaque {
-
     background-color: #f9af4f;
-
     color: #090909;
-
 }
 
 
 
 .btn:hover {
-
     opacity: 0.8;
-
 }
 
 
@@ -496,56 +423,39 @@ nav a:hover {
 /* FOOTER */
 
 footer {
-
     background-color: #ff8000;
-
     text-align: center;
-
     padding: 30px;
-
     border-top: 1px solid #ff8000;
-
     color: #ffffff;        
-
 }
 
 .produto-img{
-
     width: 200px;
-
-
-
 }
 
 
 
 .sublume h2{
-
     text-align: center;
-
 }
 
 .sobre-img{
-
     width: 600px;
-
 }
 
 
-
 .sublume-img{
-
-    width: 700px;
-
+    width: auto; 
+    max-width: 100%;
+    max-height: 50vh; /* Limita a altura da imagem para sobrar espaço para o texto */
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 
 
 .logo-img{
-
     width: 50px;
-
-
-
 }
 
