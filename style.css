@@ -387,7 +387,9 @@ nav a:hover {
 }
 
 
-
+.sublume-texto {
+    flex: 1; /* texto menor */
+}
 
 
 
@@ -445,12 +447,17 @@ footer {
 }
 
 
+.sublume-imagem {
+    flex: 1.5; /* imagem maior */
+    display: flex;
+    justify-content: center;
+}
+
 .sublume-img{
-    width: auto; 
-    max-width: 100%;
-    max-height: 50vh; /* Limita a altura da imagem para sobrar espaço para o texto */
+    width: 100%;
+    max-width: 500px; /* aumenta o limite */
+    max-height: 70vh; /* aumenta altura */
     object-fit: contain;
-    border-radius: 8px;
 }
 
 
