@@ -174,11 +174,8 @@ nav a:hover {
 
 
 .sobre p {
-
     line-height: 1.6;
-
     color: #ffffff;
-
 }
 
 
@@ -209,9 +206,7 @@ nav a:hover {
 
 
 .produto p{
-
     color: #000000;
-
 }
 
 
@@ -344,6 +339,11 @@ nav a:hover {
 }
 
 
+.sublume-texto p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 400px; /* limita largura do texto */
+}
 
 .produto .btn { 
     margin-bottom: 20px; /* 🔥 garante que não corte */
